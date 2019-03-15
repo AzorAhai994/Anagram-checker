@@ -13,15 +13,10 @@
         function anagramChecker() {
             var
                 wordOne = prompt("Unesite prvu reč:").split("").sort().toString(),
-                wordTwo = prompt("Unesite drugu reč:").split("").sort().toString();
+                wordTwo = prompt("Unesite drugu reč:").split("").sort().toString(),
+                anagram = wordOne === wordTwo;
 
-            if (wordOne == wordTwo) {
-                alert("ANAGRAM DETECTED");
-            } else {
-                alert("ANAGRAM NOT DETECTED");
-            }
-            console.log(wordOne);
-            console.log(wordTwo);
+            alert(anagram ? "ANAGRAM DETECTED" : "ANAGRAM NOT DETECTED");
         }
         anagramChecker();
     </script>
